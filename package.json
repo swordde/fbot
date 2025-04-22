@@ -23,5 +23,8 @@
   "bugs": {
     "url": "https://github.com/swordde/fbot/issues"
   },
-  "homepage": "https://github.com/swordde/fbot#readme"
+  "homepage": "https://github.com/swordde/fbot#readme",
+  "dependencies": {
+    "dotenv": "^16.5.0"
+  }
 }
