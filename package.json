@@ -1,0 +1,27 @@
+{
+  "name": "fbot",
+  "version": "1.0.0",
+  "description": "this is bot that is dedicated to our open source community!",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/swordde/fbot.git"
+  },
+  "keywords": [
+    "Discord",
+    "bot",
+    "Open",
+    "source",
+    "chat",
+    "ranking"
+  ],
+  "author": "The Heavenly Sword Deamon",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/swordde/fbot/issues"
+  },
+  "homepage": "https://github.com/swordde/fbot#readme"
+}
