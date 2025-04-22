@@ -1,3 +1,4 @@
+console.log("⏳ TOKEN RAW:", JSON.stringify(process.env.DISCORD_TOKEN));
 require("dotenv").config();
 const { Client, GatewayIntentBits } = require("discord.js");
 
