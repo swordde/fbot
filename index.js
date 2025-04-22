@@ -1,5 +1,9 @@
-console.log("⏳ TOKEN RAW:", JSON.stringify(process.env.DISCORD_TOKEN));
+
+
 require("dotenv").config();
+const token = process.env.DISCORD_TOKEN?.trim();
+console.log("✅ TOKEN CLEAN:", JSON.stringify(token));
+
 const { Client, GatewayIntentBits } = require("discord.js");
 
 const playRPS = require("./games/rps"); // Import the RPS game
