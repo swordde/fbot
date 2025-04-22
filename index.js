@@ -1,11 +1,9 @@
-
 require("dotenv").config();
 const { Client, GatewayIntentBits } = require("discord.js");
 
+// Clean the token to remove any unwanted characters like leading or trailing '='
 const token = process.env.DISCORD_TOKEN?.replace(/^=+|=+$/g, '').trim();
-console.log("✅ TOKEN CLEAN:",JSON.stringify(token));
-
-
+console.log("✅ TOKEN CLEAN:", JSON.stringify(token)); // Debugging - remove once you're done
 
 const playRPS = require("./games/rps"); // Import the RPS game
 
@@ -52,5 +50,5 @@ client.on("messageCreate", (message) => {
     }
 });
 
-
+// Log in with the cleaned token
 client.login(token);
