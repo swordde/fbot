@@ -2,8 +2,8 @@
 require("dotenv").config();
 const { Client, GatewayIntentBits } = require("discord.js");
 
-const token = process.env.DISCORD_TOKEN?.trim();
-console.log("✅ TOKEN CLEAN:", JSON.stringify(token));
+const token = process.env.DISCORD_TOKEN?.replace(/^=+|=+$/g, '').trim();
+console.log("✅ TOKEN CLEAN:",JSON.stringify(token));
 
 
 
@@ -51,5 +51,6 @@ client.on("messageCreate", (message) => {
         - **!help**: Display this help message ❓`);
     }
 });
+
 
 client.login(process.env.DISCORD_TOKEN);
